@@ -21,7 +21,7 @@
 <body>
     <!-- Header -->
     <header class="page-header">
-        <div class="container">
+        <div class="container header-cont">
             <nav class="navigation-elem">
                 <!-- Main logo -->
                 <a class="logo" href="./index.html">
@@ -56,6 +56,11 @@
                     </li>
                 </ul>
             </address>
+            <button class="burger-btn" type="button" data-mobile-open>
+                <svg class="burger-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-borger-menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -65,7 +70,7 @@
             <div class="container">
                 <h1 class="page-title">Effective Solutions for Your Business</h1>
 
-                <button class="order-button" type="button">Order Service</button>
+                <button class="order-button" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
 
@@ -137,7 +142,6 @@
             <div class="container">
                 <h2 class="our-team-title">Our Team</h2>
                 <ul class="our-team-ul">
-                    <!-- Mark Guerrero -->
                     <li class="our-team-li">
                         <img srcset="./images/mark-guerrero-2x.jpg 2x" src="./images/mark-guerrero-1x.jpg"
                             alt="Mark Guerrero" width="264" height="260">
@@ -176,7 +180,6 @@
                             </ul>
                         </div>
                     </li>
-                    <!-- Tom Ford -->
                     <li class="our-team-li">
                         <img srcset="./images/tom-ford-2x.jpg 2x" src="./images/tom-ford-1x.jpg" alt="Tom Ford"
                             width="264" height="260">
@@ -215,7 +218,6 @@
                             </ul>
                         </div>
                     </li>
-                    <!-- Camila Garcia -->
                     <li class="our-team-li">
                         <img srcset="./images/camila-garcia-2x.jpg 2x" src="./images/camila-garcia-1x.jpg"
                             alt="Camila Garcia" width="264" height="260">
@@ -254,7 +256,6 @@
                             </ul>
                         </div>
                     </li>
-                    <!-- Daniel Wilson -->
                     <li class="our-team-li">
                         <img srcset="./images/daniel-wilson-2x.jpg 2x" src="./images/daniel-wilson-1x.jpg"
                             alt="Daniel Wilson" width="264" height="260">
@@ -303,7 +304,6 @@
                 <h2 class="our-portfolio-title">Our Portfolio</h2>
 
                 <ul class="our-portfolio-ul">
-                    <!-- Banking App -->
                     <li class="our-portfolio-li">
                         <div class="our-portfolio-cards-image">
                             <picture>
@@ -313,8 +313,7 @@
                                     srcset="./images/banking-app-tablet-1x.jpg 1x, ./images/banking-app-tablet-2x.jpg 2x">
                                 <source media="(max-width: 767px)"
                                     srcset="./images/banking-app-mobile-1x.jpg 1x, ./images/banking-app-mobile-2x.jpg 2x">
-                                <img src="./images/banking-app-mobile-1x.jpg" alt="Banking App" width="360"
-                                    height="300">
+                                <img src="./images/banking-app-mobile-1x.jpg" alt="Banking App">
                             </picture>
 
                             <p class="our-portfolio-text-animation">
@@ -328,7 +327,6 @@
                         </div>
                     </li>
 
-                    <!-- Cashless Payment -->
                     <li class="our-portfolio-li">
                         <div class="our-portfolio-cards-image">
                             <picture>
@@ -338,8 +336,7 @@
                                     srcset="./images/cashless-payment-tablet-1x.jpg 1x, ./images/cashless-payment-tablet-2x.jpg 2x">
                                 <source media="(max-width: 767px)"
                                     srcset="./images/cashless-payment-mobile-1x.jpg 1x, ./images/cashless-payment-mobile-2x.jpg 2x">
-                                <img src="./images/cashless-payment-mobile-1x.jpg" alt="Cashless Payment" width="360"
-                                    height="300">
+                                <img src="./images/cashless-payment-mobile-1x.jpg" alt="Cashless Payment">
                             </picture>
 
                             <p class="our-portfolio-text-animation">
@@ -353,7 +350,6 @@
                         </div>
                     </li>
 
-                    <!-- Meditation App -->
                     <li class="our-portfolio-li">
                         <div class="our-portfolio-cards-image">
                             <picture>
@@ -363,8 +359,7 @@
                                     srcset="./images/meditation-app-tablet-1x.jpg 1x, ./images/meditation-app-tablet-2x.jpg 2x">
                                 <source media="(max-width: 767px)"
                                     srcset="./images/meditation-app-mobile-1x.jpg 1x, ./images/meditation-app-mobile-2x.jpg 2x">
-                                <img src="./images/meditation-app-mobile-1x.jpg" alt="Meditation App" width="360"
-                                    height="300">
+                                <img src="./images/meditation-app-mobile-1x.jpg" alt="Meditation App">
                             </picture>
 
                             <p class="our-portfolio-text-animation">
@@ -378,7 +373,6 @@
                         </div>
                     </li>
 
-                    <!-- Taxi Service -->
                     <li class="our-portfolio-li">
                         <div class="our-portfolio-cards-image">
                             <picture>
@@ -388,8 +382,7 @@
                                     srcset="./images/taxi-service-tablet-1x.jpg 1x, ./images/taxi-service-tablet-2x.jpg 2x">
                                 <source media="(max-width: 767px)"
                                     srcset="./images/taxi-service-mobile-1x.jpg 1x, ./images/taxi-service-mobile-2x.jpg 2x">
-                                <img src="./images/taxi-service-mobile-1x.jpg" alt="Taxi Service" width="360"
-                                    height="300">
+                                <img src="./images/taxi-service-mobile-1x.jpg" alt="Taxi Service">
                             </picture>
 
                             <p class="our-portfolio-text-animation">
@@ -403,7 +396,7 @@
                         </div>
                     </li>
 
-                    <!-- Screen Illustrations -->
+
                     <li class="our-portfolio-li">
                         <div class="our-portfolio-cards-image">
                             <picture>
@@ -413,8 +406,7 @@
                                     srcset="./images/screen-illustrations-tablet-1x.jpg 1x, ./images/screen-illustrations-tablet-2x.jpg 2x">
                                 <source media="(max-width: 767px)"
                                     srcset="./images/screen-illustrations-mobile-1x.jpg 1x, ./images/screen-illustrations-mobile-2x.jpg 2x">
-                                <img src="./images/screen-illustrations-mobile-1x.jpg" alt="Screen Illustrations"
-                                    width="360" height="300">
+                                <img src="./images/screen-illustrations-mobile-1x.jpg" alt="Screen Illustrations">
                             </picture>
 
                             <p class="our-portfolio-text-animation">
@@ -428,18 +420,16 @@
                         </div>
                     </li>
 
-                    <!-- Online Courses -->
                     <li class="our-portfolio-li">
                         <div class="our-portfolio-cards-image">
                             <picture>
                                 <source media="(min-width: 1158px)"
-                                    srcset="./images/online-courses-desktop-1x.jpg 1x, ./images/online-courses-desktop-2x.jpg 2x">
+                                    srcset="./images/online-courses-desktop-1x.jpg 1x, ./images/online-courses-desktop-2x.jpg 2x" >
                                 <source media="(min-width: 768px)"
                                     srcset="./images/online-courses-tablet-1x.jpg 1x, ./images/online-courses-tablet-2x.jpg 2x">
                                 <source media="(max-width: 767px)"
                                     srcset="./images/online-courses-mobile-1x.jpg 1x, ./images/online-courses-mobile-2x.jpg 2x">
-                                <img src="./images/online-courses-mobile-1x.jpg" alt="Online Courses" width="360"
-                                    height="300">
+                                <img src="./images/online-courses-mobile-1x.jpg" alt="Online Courses">
                             </picture>
 
                             <p class="our-portfolio-text-animation">
@@ -460,7 +450,6 @@
     <!-- Footer -->
     <footer class="footer-section">
         <div class="container footer-content">
-            <!-- WEBSTUDIO logo and text -->
             <div class="container footer-logo-p">
                 <a class="logo-footer" href="./index.html">
                     Web<span class="logo-studio-element">Studio</span>
@@ -471,7 +460,6 @@
                 </p>
             </div>
 
-            <!-- Social media -->
             <div class="container social-div">
                 <p class="footer-text social">
                     Social media
@@ -508,7 +496,6 @@
                 </ul>
             </div>
 
-            <!-- Subscribe elements -->
             <div class="container footer-email-div">
                 <p class="subscribe-text-footer">Subscribe</p>
                 <form class="form-subscribe-footer">
@@ -526,10 +513,9 @@
     </footer>
 
     <!-- Backdrop -->
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
         <div class="modal">
-            <!-- Close btn -->
-            <button class="btn-close" type="button">
+            <button class="btn-close" type="button" data-modal-close>
                 <svg class="icons-modal-close" width="8" height="8">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
@@ -538,7 +524,6 @@
             <p class="modal-text">Leave your contacts and we will call you back</p>
 
             <form>
-                <!-- Name input -->
                 <div class="form-wrapper-cont">
                     <label class="form-user-label" for="user-name">Name</label>
                     <div class="form-user-wrapper-icon">
@@ -550,7 +535,6 @@
                     </div>
                 </div>
 
-                <!-- Phone nmb input -->
                 <div class="form-wrapper-cont">
                     <label class="form-user-label" for="form-tel">Phone</label>
                     <div class="form-user-wrapper-icon">
@@ -562,7 +546,6 @@
                     </div>
                 </div>
 
-                <!-- Email input -->
                 <div class="form-wrapper-cont">
                     <label class="form-user-label" for="form-email">Email</label>
                     <div class="form-user-wrapper-icon">
@@ -573,14 +556,12 @@
                     </div>
                 </div>
 
-                <!-- Comment -->
                 <div class="form-wrapper-cont user-comment-cnt">
                     <label class="form-user-label" for="user-comment">Comment</label>
                     <textarea class="form-user-comment" name="user-comment" id="user-comment"
                         placeholder="Text input"></textarea>
                 </div>
 
-                <!-- Custom checkbox -->
                 <div class="form-wrapper-checkbox">
                     <input type="checkbox" class="checkbox visually-hidden" name="user-privacy" required
                         id="user-privacy" value="true">
@@ -589,14 +570,86 @@
                             <svg width="10" height="8" class="castom-checkbox-icon">
                                 <use href="./images/icons.svg#icon-check"></use>
                             </svg>
-                        </span>I accept the terms and conditions of the <a href="#" class="privacy-policy">Privacy
-                            Policy</a></label>
+                        </span><span class="castom-checkbox-text">
+                            I accept the terms and conditions of the <a href="#" class="privacy-policy">Privacy
+                                Policy</a>
+                        </span></label>
                 </div>
 
                 <button type="submit" class="form-send-btn">Send</button>
             </form>
         </div>
     </div>
+
+    <!-- Mobile menu -->
+     <div class="mobile-menu" data-mobile>
+        <div class="container container-mobile-menu">
+            <button class="mobile-menu-btn-close" type="button" data-mobile-close>
+                <svg class="icons-modal-close" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <nav class="nav-mobile-menu">
+                <ul class="menu-pages">
+                    <li class="menu-pages-elem">
+                        <a href="./index.html" class="mobile-menu-link">
+                            <span class="mobile-link-color">Studio</span>
+                        </a>
+                    </li>
+                    <li class="menu-pages-text">
+                        <a href="#Portfolio" class="mobile-menu-link">Portfolio</a>
+                    </li>
+                    <li class="menu-pages-text">
+                        <a href="#Contacts" class="mobile-menu-link">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <address class="mobile-menu-address">
+                <ul class="mobile-menu-address-elements">
+                    <li>
+                        <a class="mobile-menu-address-link mobile-menu-link-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+            
+                    <li>
+                        <a class="mobile-menu-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+            </address>
+            <ul class="mobile-menu-icons-ul">
+                <li class="mobile-menu-icons-li">
+                    <a href="" class="mobile-menu-icons-link">
+                        <svg class="mobile-menu-icons" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-menu-icons-li">
+                    <a href="" class="mobile-menu-icons-link">
+                        <svg class="mobile-menu-icons" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-menu-icons-li">
+                    <a href="#" class="mobile-menu-icons-link">
+                        <svg class="mobile-menu-icons" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-menu-icons-li">
+                    <a href="#" class="mobile-menu-icons-link">
+                        <svg class="mobile-menu-icons" width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+     </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile.js"></script>
 </body>
 
 </html>
